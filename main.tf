@@ -1,4 +1,10 @@
 terraform {
+  cloud {
+    organization = "GCash_FECP_4-DevSecOps"
+    workspaces {
+      name = "Kahit_Ano"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
